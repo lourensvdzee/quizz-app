@@ -12,6 +12,7 @@ header {
   position: fixed;
   display: flex;
   width: 100%;
+  margin-top: -18px;
   background-color: white;
   outline: 2px solid black;
   justify-content: center;
@@ -68,13 +69,12 @@ li {
 }
 
 footer {
+  display: inline-block;
   position: fixed;
   border: 2px solid black;
+  height: 130px;
   width: 100%;
   bottom: 0px;
   background-color: white;
   text-align: center;
-}
-
-footer a {
 }
