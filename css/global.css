@@ -78,3 +78,31 @@ footer {
   background-color: white;
   text-align: center;
 }
+
+.user {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 50px;
+  font-size: 50px;
+}
+
+.header_profile {
+  text-align: center;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  margin-top: -73px;
+  background-color: white;
+  outline: 2px solid black;
+  justify-content: center;
+  z-index: 999;
+}
+
+.profile__image {
+  border-radius: 50%;
+  max-width: 25%;
+  height: auto;
+  align-self: center;
+}
