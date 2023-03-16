@@ -53,7 +53,6 @@ button {
 }
 
 li {
-  display: flex;
   background-color: lightgray;
   padding: 5px;
   outline: 1px solid black;
@@ -119,10 +118,17 @@ footer a img {
 }
 
 .questions-bookmarks {
-  position: flex;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
   flex-direction: row;
-  width: 80px;
   margin-top: 80px;
   color: #ffffff;
   border-radius: 10px;
+}
+
+.questions-bookmarks li {
+  width: 75px;
+  text-align: right;
 }
