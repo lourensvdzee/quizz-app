@@ -72,11 +72,16 @@ footer {
   display: inline-block;
   position: fixed;
   border: 2px solid black;
-  height: 130px;
+  height: 70px;
   width: 100%;
   bottom: 0px;
   background-color: white;
   text-align: center;
+}
+
+footer a img {
+  height: 60px;
+  margin-top: 5px;
 }
 
 .user {
@@ -105,4 +110,19 @@ footer {
   max-width: 25%;
   height: auto;
   align-self: center;
+}
+
+.about-me {
+  margin-left: 50px;
+  width: 80%;
+  position: fixed;
+}
+
+.questions-bookmarks {
+  position: flex;
+  flex-direction: row;
+  width: 80px;
+  margin-top: 80px;
+  color: #ffffff;
+  border-radius: 10px;
 }
