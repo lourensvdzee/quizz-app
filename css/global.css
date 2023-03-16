@@ -1,3 +1,8 @@
+/*this CSS file contains all the general code for all 3 pages. 
+There is a specific CSS file (styles.css) for profile.html*/
+
+@import "./styles.css";
+
 * {
   box-sizing: border-box;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -19,7 +24,7 @@ header {
   z-index: 999;
 }
 
-h3 {
+.question {
   text-align: center;
   font-size: medium;
   padding: 15px;
@@ -52,6 +57,8 @@ button {
   padding: 15px;
 }
 
+/*the li tag below adds color and style to the tag boxes */
+
 li {
   background-color: lightgray;
   padding: 5px;
@@ -78,11 +85,6 @@ footer {
   background-color: #ffffff;
 }
 
-/*
-footer:hover {
-  background-color: white;
-} */
-
 footer a img {
   height: 60px;
   margin-top: 5px;
@@ -95,46 +97,4 @@ footer a img {
   justify-content: center;
   gap: 50px;
   font-size: 50px;
-}
-
-.header_profile {
-  text-align: center;
-  position: fixed;
-  display: flex;
-  width: 100%;
-  margin-top: -73px;
-  background-color: white;
-  outline: 2px solid black;
-  justify-content: center;
-  z-index: 999;
-}
-
-.profile__image {
-  border-radius: 50%;
-  max-width: 25%;
-  height: auto;
-  align-self: center;
-}
-
-.about-me {
-  margin-left: 50px;
-  width: 80%;
-  position: fixed;
-}
-
-.questions-bookmarks {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-direction: row;
-  margin-top: 80px;
-  color: #ffffff;
-  border-radius: 10px;
-}
-
-.questions-bookmarks li {
-  margin-top: 120px;
-  width: 75px;
-  text-align: right;
 }
