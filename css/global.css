@@ -1,10 +1,100 @@
+/*this CSS file contains all the general code for all 3 pages. 
+There is a specific CSS file (styles.css) for profile.html*/
+
+@import "./styles.css";
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    outline: 2px solid black;
+header {
+  text-align: center;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  margin-top: -18px;
+  background-color: white;
+  outline: 2px solid black;
+  justify-content: center;
+  z-index: 999;
+}
+
+.question {
+  text-align: center;
+  font-size: medium;
+  padding: 15px;
+}
+
+button {
+  width: 50%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  border: solid 1px black;
+  margin: 20px;
+  position: relative;
+  top: 70px;
+}
+
+.card-container__tags {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 15px;
+}
+
+/*the li tag below adds color and style to the tag boxes */
+
+li {
+  background-color: lightgray;
+  padding: 5px;
+  outline: 1px solid black;
+  color: black;
+  border-radius: 10px;
+}
+
+.card_bookmark {
+  position: absolute;
+  width: 30px;
+  right: 5px;
+  top: -15px;
+}
+
+footer {
+  display: inline-block;
+  position: fixed;
+  border: 2px solid black;
+  height: 70px;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+footer a img {
+  height: 60px;
+  margin-top: 5px;
+}
+
+.user {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 50px;
+  font-size: 50px;
 }

@@ -1,0 +1,53 @@
+/*this CSS file contains all the code for profile.html, and is linked to global.css*/
+
+.header_profile {
+  text-align: center;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  margin-top: -73px;
+  background-color: white;
+  outline: 2px solid black;
+  justify-content: center;
+  z-index: 999;
+}
+
+.profile__image {
+  border-radius: 50%;
+  max-width: 25%;
+  margin-left: 50px;
+  height: auto;
+  align-self: center;
+}
+
+h2 {
+  margin-left: -20px;
+  bottom: 35px;
+}
+
+.about-me-title {
+  text-align: center;
+}
+
+.about-me {
+  margin-left: 50px;
+  width: 80%;
+  position: fixed;
+}
+
+.questions-bookmarks {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-direction: row;
+  margin-top: 80px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.questions-bookmarks li {
+  margin-top: 120px;
+  width: 75px;
+  text-align: right;
+}
