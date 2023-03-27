@@ -1,41 +1,3 @@
-/* Older code to try out
-
-const cardBookmark = document.querySelector("[data-js=card_bookmark]");
-console.log('cardBookmark: ', cardBookmark);
-
-cardBookmark.addEventListener("click", (event) => {
-    console.log('event.target', event.target.src);
-    console.log('I am clicking');
-
-
-    //event.target.src != "./asset/bookmark_filled.png" ? event.target.src = './assets/bookmark_filled.png' : event.target.src != './asset/bookmark_filled.png'
-
-
-    if (event.target.src !== "./assets/bookmark_filled.png") {
-        event.target.src = "./assets/bookmark_transparent.png";
-         console.log('src', event.target.src);
-    } else {
-        event.target.src = "./assets/bookmark.png";
-    }
-})
-
-function bookmarkFilled() {
-    if (cardBookmark.src != "./assets/bookmark_filled.png") {
-        cardBookmark.src = "./assets/bookmark_filled.png";
-    } else {
-        cardBookmark.src = "./assets/bookmark.png";
-    }
-}
-
-function bookmarkEmpty() {
-    if (img.src != "./assets/bookmark.png") {
-        img.src = "./assets/bookmark.png";
-    } else {
-        img.src = "./assets/bookmark_filled.png";
-    }
-} */
-
-
 // Bookmark Icon toggle
 const bookmarkIcons = document.querySelectorAll('[data-js="card_bookmark"]');
 // console.log(bookmarkIcons.length);
@@ -95,4 +57,20 @@ for (let i = 0; i < buttonTexts.length; i++) {
     });
 } */
 
+// Code to add a new container
+/* const newCard = document.querySelector('[data-js="card-container"]');
+const submitButton = document.querySelector('[data-js="button"]')
+console.log(submitButton.length);
 
+submitButton.addEventListener("click", (event) => {
+    const newContainer = document.createElement("div");
+    newContainer.classList.add("question");
+    newContainer.textContent = form.textarea.textContent;
+    newContainer.classlist.add("card-button");
+    newContainer.classlist.add("answer-text");
+    newContainer.textContent = form.textarea.textContent;
+    newContainer.classList.add("card-container__tags");
+    newContainer.li = form.textarea.textContent; 
+    
+    newCard.append(newContainer);
+}); */

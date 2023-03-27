@@ -5,26 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/global.css" />
+    <script src="./js/index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <header><h1>Quiz App</h1></header>
+    <header class="header_form"><h1>Quiz App</h1></header>
     <main>
         <form data-js="form">
-            <fieldset>
                 <!-- Where are my text boxes? Why does my CSS not respond?-->
               <label for="your-question">Your question:</label>
-              <textarea name="your-question" id="your-question" cols="30" rows="10"></textarea>
+              <textarea class="your-question" name="your-question" id="your-question" cols="30" rows="10" maxlength="150"></textarea>
               <label for="your-answer">Your answer:</label>
-              <textarea name="your-answer" id="your-answer" cols="30" rows="10"></textarea>
+              <textarea class="your-answer" name="your-answer" id="your-answer" cols="30" rows="10" maxlength="150"></textarea>
               <label for="Tag">Tag:</label>
-              <input
-                type="text"
-                name="Tag"
-                id="Tag"
-              />    
-            </fieldset>
-            <button type="submit">Submit</button>
+              <input class="Tag" type="text" name="Tag" id="Tag" />    
+            <button type="submit" data-js="button">Submit</button>
           </form>
     </main>
     <footer class="footer-images">
