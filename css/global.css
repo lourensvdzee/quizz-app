@@ -1,7 +1,8 @@
-/*this CSS file contains all the general code for all 3 pages. 
-There is a specific CSS file (styles.css) for profile.html*/
+/*this CSS file contains all the general code for all 4 pages. 
+There are specific CSS files for profile.html and form.css*/
 
-@import "./styles.css";
+@import "./styles.css"; /*profile.html*/
+@import "./form.css"; /*form.html*/
 
 * {
   box-sizing: border-box;
@@ -32,8 +33,8 @@ header {
 
 button {
   width: 50%;
-  display: flex;
   margin: auto;
+  display: flex;
   justify-content: center;
 }
 

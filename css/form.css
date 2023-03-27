@@ -1,0 +1,14 @@
+/*this CSS file contains code for form.html, and is linked to global.css*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+  }

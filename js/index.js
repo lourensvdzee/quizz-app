@@ -62,7 +62,7 @@ const answerToggles = document.querySelectorAll('[data-js="answer-text"]');
 for (let i = 0; i < answerButtons.length; i++) {
     const answerButton = answerButtons[i];
     const answerToggle = answerToggles[i];
-    console.log(answerButton);
+    //console.log(answerButton);
 
     answerButton.addEventListener("click", () => {
         if (answerToggle.style.display == "none") {
@@ -73,10 +73,13 @@ for (let i = 0; i < answerButtons.length; i++) {
     });
 }
 
-// Answer text
+// Answer-button text change
+// tried the following: Adding <form> to html layout and adding value "Show Answer". 
+// It returned a "flat button" and without changing the text
+
 /* const buttonTexts = document.querySelectorAll('[data-js="button-text"]');
 console.clear();
-// console.log(buttonText);
+console.log(buttonTexts.length);
 
 for (let i = 0; i < buttonTexts.length; i++) {
     const answerButton = answerButtons[i];
@@ -84,10 +87,10 @@ for (let i = 0; i < buttonTexts.length; i++) {
     console.log(buttonTexts);
 
     answerButton.addEventListener("click", () => {
-        if (buttonText.style.value == "Show Answer") {
-            answerToggle.style.value = "Hide Answer";
+        if (buttonText.value == "Show Answer") {
+            buttonText.value = "Hide Answer";
         } else {
-            answerToggle.style.display = "none";
+            buttonText.value = "none";
         }
     });
 } */
