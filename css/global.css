@@ -74,6 +74,10 @@ li {
   top: -15px;
 }
 
+.answer-text {
+  text-align: center;
+}
+
 footer {
   display: inline-block;
   position: fixed;
