@@ -1,0 +1,30 @@
+/*this CSS file contains code for form.html, and is linked to global.css*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  
+}
+
+form {
+    position: absolute;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+  }
+
+/*attempt to show the new card container below the form 
+/*   .new-card-container {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    border: solid 1px black;
+    margin: 20px;
+    position: relative;
+    top: 70px;
+  } */
+  
