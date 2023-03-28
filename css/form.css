@@ -13,7 +13,17 @@ form {
     margin: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    
+    gap: 10px;    
   }
+
+/*attempt to show the new card container below the form 
+/*   .new-card-container {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    border: solid 1px black;
+    margin: 20px;
+    position: relative;
+    top: 70px;
+  } */

@@ -57,25 +57,75 @@ for (let i = 0; i < buttonTexts.length; i++) {
     });
 } */
 
-// Code to add a new container
-const newCard = document.querySelector('[data-js="form"]');
-const submitButton = document.querySelector('[data-js="button"]')
-console.log(newCard);
+/* ----------------------------------------------------------------
+add new card with input from form
+---------------------------------------------------------------- */
 
-submitButton.addEventListener("submit", (event) => {
+const form = document.querySelector('[data-js="form"]');
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const formElements = event.target.elements;
+    //      console.log(formElements);
+    const question = formElements.question.value;
+    //      console.log(question);
+    const answer = formElements.answer.value;
+    //      console.log(answer);
+    const tag = formElements.tag.value;
+    //      console.log(tag);
+
+    const newCard = document.createElement("section");
+    newCard.classList.add("card-container");
+    newCard.innerHTML = `<section data-js="card-container" class="new-card-container">
+<h3 class="question">${question}</h3>
+<button data-js="answer-button" class="card-button">
+  <h3 data-js="button-text">Show Answer</h3>
+</button>
+<span data-js="answer-text" class="answer-text" style="display: none;">
+  <p>${answer}</p>
+</span>
+<ul class="card-container__tags">
+  <li>${tag}</li>
+</ul>
+<img data-js="card_bookmark"
+  class="card_bookmark"
+  src="./assets/bookmark.png"
+  alt="bookmark_empty"
+/>
+</section>`;
+
+    document.body.append(newCard);
+
+
+});
+
+
+// const newCard = document.querySelector('[data-js="form"]');
+/* const submitButton = document.querySelector('[data-js="button"]')
+const newCard = new FormData(document.querySelector("form"));
+const data = Object.fromEntries(newCard);
+console.log(data);
+
+let questionText = data.question.value;
+console.log(questionText); */
+
+/* submitButton.addEventListener("submit", (event) => {
     event.preventDefault();
     //add full form first
     const formElements = event.target.elements;
+    //console.log(formElements);
     //add text fields via name tag, eg formElements.your-question.value;
+    //console.log(questionText);
+    const question = formElements.question.value;
     console.log(questionText);
-    const questionText = "text1"
+
+}); */
+/*     const questionText = "text1"
     const answerText = "text2"
     const tagText = "text3"
 
     const newCard = document.createElement("section");
-    newCard.innerHTML =
-        // console.log(newCard);
-        /* newCard.innerHTML = `<section data-js="card-container" class="card-container">
+    newCard.innerHTML = `<section data-js="card-container" class="card-container">
         <h3 class="question">What property flips the axes in flexbox?</h3>
         <button data-js="answer-button" class="card-button">
           <h3 data-js="button-text">Show Answer</h3>
@@ -93,14 +143,14 @@ submitButton.addEventListener("submit", (event) => {
           src="./assets/bookmark.png"
           alt="bookmark_empty"
         />
-      </section>` */
+      </section>`
 
-        /* newContainer.textContent = form.textarea.value;
-        newContainer.classlist.add("card-button");
-        newContainer.classlist.add("answer-text");
-        newContainer.textContent = form.textarea.value;
-        newContainer.classList.add("card-container__tags");
-        newContainer.li = form.textarea.value; */
+        // newContainer.textContent = form.textarea.value;
+        // newContainer.classlist.add("card-button");
+        // newContainer.classlist.add("answer-text");
+        // newContainer.textContent = form.textarea.value;
+        // newContainer.classList.add("card-container__tags");
+        // newContainer.li = form.textarea.value;
 
         newCard.append(newContainer);
-});
+}); */
