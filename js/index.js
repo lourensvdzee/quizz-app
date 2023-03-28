@@ -58,19 +58,49 @@ for (let i = 0; i < buttonTexts.length; i++) {
 } */
 
 // Code to add a new container
-/* const newCard = document.querySelector('[data-js="card-container"]');
+const newCard = document.querySelector('[data-js="form"]');
 const submitButton = document.querySelector('[data-js="button"]')
-console.log(submitButton.length);
+console.log(newCard);
 
-submitButton.addEventListener("click", (event) => {
-    const newContainer = document.createElement("div");
-    newContainer.classList.add("question");
-    newContainer.textContent = form.textarea.textContent;
-    newContainer.classlist.add("card-button");
-    newContainer.classlist.add("answer-text");
-    newContainer.textContent = form.textarea.textContent;
-    newContainer.classList.add("card-container__tags");
-    newContainer.li = form.textarea.textContent; 
-    
-    newCard.append(newContainer);
-}); */
+submitButton.addEventListener("submit", (event) => {
+    event.preventDefault();
+    //add full form first
+    const formElements = event.target.elements;
+    //add text fields via name tag, eg formElements.your-question.value;
+    console.log(questionText);
+    const questionText = "text1"
+    const answerText = "text2"
+    const tagText = "text3"
+
+    const newCard = document.createElement("section");
+    newCard.innerHTML =
+        // console.log(newCard);
+        /* newCard.innerHTML = `<section data-js="card-container" class="card-container">
+        <h3 class="question">What property flips the axes in flexbox?</h3>
+        <button data-js="answer-button" class="card-button">
+          <h3 data-js="button-text">Show Answer</h3>
+        </button>
+        <span data-js="answer-text" class="answer-text" style="display: none;">
+          <p>Flex-direction</p>
+        </span>
+        <ul class="card-container__tags">
+          <li>#html</li>
+          <li>#flexbox</li>
+          <li>#css</li>
+        </ul>
+        <img data-js="card_bookmark"
+          class="card_bookmark"
+          src="./assets/bookmark.png"
+          alt="bookmark_empty"
+        />
+      </section>` */
+
+        /* newContainer.textContent = form.textarea.value;
+        newContainer.classlist.add("card-button");
+        newContainer.classlist.add("answer-text");
+        newContainer.textContent = form.textarea.value;
+        newContainer.classList.add("card-container__tags");
+        newContainer.li = form.textarea.value; */
+
+        newCard.append(newContainer);
+});
